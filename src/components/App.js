@@ -1,7 +1,8 @@
 import { Component } from "react";
 import { Form } from "./Form";
 import { Filter } from "./Filter";
-import { ContactList} from './ContactList'
+import { ContactList } from './ContactList';
+import style from './app.module.css';
 import shortid from "shortid";
 
 export class App extends Component {
@@ -58,9 +59,9 @@ export class App extends Component {
     const filterContacts = this.getFilterContacts();
     return (
       <div>
-        <h2>Phonebook</h2>
+        <h2 className={style.title}>Phonebook</h2>
         <Form onSubmit={this.addContact}></Form>
-        <h2>Contacts</h2>
+        <h2 className={style.title}>Contacts</h2>
         <Filter value={this.state.filter} onChange={this.handleChangeFilter}/>
         <ContactList filterContacts={filterContacts} clickDelete={this.clickDelete}/>
       </div>
