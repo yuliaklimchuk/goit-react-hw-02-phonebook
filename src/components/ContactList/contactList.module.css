@@ -7,17 +7,5 @@
     font-size: 25px;
     width: 450px;
 }
-.item{
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.button {
-    font-size: 18px;
-    border-radius: 5px;
-    background-color: inherit;
-    cursor: pointer;
-}
+
