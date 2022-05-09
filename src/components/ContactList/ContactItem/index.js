@@ -1,1 +1,1 @@
-export { ContactItem } from './сontactItem.jsx';
+export { ContactItem } from './contactItem.jsx';
